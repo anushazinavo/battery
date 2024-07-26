@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- font awesom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+
+    <!-- slider  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+    <!-- product slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
+
+
+
+    <link rel="stylesheet" href="../dist/css/style.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-dropdown-full " style="background-color: #FF4500;" >
+        <div class="container">
+            <a class="navbar-brand text-light" href="#"><img src="../images/" alt="">LOGO HERE</a>
+            <button type="button " class="btn nav-search-mobile bg-light">Search Plates</button>
+            <button class="navbar-toggler text-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <i class="fa-solid fa-bars text-light">
+                </i>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header text-end">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close text-reset text-end" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body okka-offcanva-body">
+                    <ul class="navbar-nav  mb-2 mb-lg-0">
+                        <li class="nav-item nav-menus-mobile">
+                            <a class="nav-link active " aria-current="page" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown nav-menus-mobile">
+                   
+                            <a class="nav-link d-flex justify-content-between align-items-center " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Products &nbsp;<i class="fa-solid fa-chevron-down ms-auto pe-3"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item dropdown-text-nav text-dark" href="#">Action</a></li>
+                                <li><a class="dropdown-item dropdown-text-nav text-dark" href="#">Another action</a>
+                                </li>
+                                <li><a class="dropdown-item dropdown-text-nav text-dark" href="#">Something else
+                                        here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-menus-mobile">
+                            <a class="nav-link" href="#">Pages</a>
+                        </li>
+                        <li class="nav-item nav-menus-mobile">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item nav-menus-mobile">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                        <!-- <button type="button" class="btn nav-search-mobile">Search Plates</button> -->
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid navbar-back-header main-navbar-okka">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+                <a class="navbar-brand text-light" href="#"><img src="../images/" alt="">LOGO HERE</a>
+   
+                <div class="collapse navbar-collapse navbar-menus-sec d-flex justify-content-end "
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0">
+                        <li class="nav-item nav-menus-links">
+                            <a class="nav-link active " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown nav-menus-links">
+                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Products &nbsp;<i class="fa-solid fa-chevron-down text-light"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item dropdown-text-nav text-dark" href="#">Action</a></li>
+                                <li><a class="dropdown-item dropdown-text-nav text-dark" href="#">Another action</a>
+                                </li>
+                                <li><a class="dropdown-item dropdown-text-nav text-dark" href="#">Something else
+                                        here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-menus-links">
+                            <a class="nav-link" href="#">Pages</a>
+                        </li>
+                        <li class="nav-item nav-menus-links">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item nav-menus-links">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                        <a href=""><button type="button" class="btn nav-search-button">Search Plates</button></a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container-fluid battery-banner">
+        <div class="row">
+            <div class="banner-image-section">
+            <img src="../images/Frame 83.png" alt="" class="" width="100%" height="auto">
+        </div>
+        </div>
+    </div>
+   <div class="container">
+    <div class="row">
+        <div class="banner-image-text main-navbar-okka main-banner-section">
+            <h2 class="banner-image-text1">NEW ZELANDS'S</h2>
+            <h2 class="banner-image-text2">BATTERY SPECIALISTS</h2>
+            <p class="banner-image-text3">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Velit similique optio nostrum corrupti deserunt illum!</p>
+            <a href="#"><button type="button" class="btn banner-image-button">Search Plates</button></a>
+        </div>
+        <div class="banner-image-text navbar-dropdown-full  main-banner-section-full">
+            <p class="banner-image-text4">NEW ZELANDS'S <br> <span class="text-white">BATTERY SPECIALISTS</span></p>
+            <!-- <p class="banner-image-text5">BATTERY SPECIALISTS</p> -->
+            <!-- <p class="banner-image-text6">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Velit similique optio <br> nostrum corrupti deserunt illum!</p> -->
+            <a href="#"><button type="button" class="btn banner-image-button">Search Plates</button></a>
+        </div>
+    </div>
+   </div>
+
+    <div class="container my-5 service-sec-container">
+        <div class="row service-section-row justify-content-between">
+            <div class="col me-4 register-sec-1">
+                <div class="py-5 service_profile-main">
+                    <div class="service_profiles d-flex">
+                        <div class="col-md-2 service_profiles_img">
+                            <img src="../images/Mask group 1.png" alt="" width="40px" height="40px">
+                        </div>
+                        <div class="col-md-10 service_profiles_body_5 ps-2 pt-3">
+                            <h5 class="service_profiles_text1">Lorem ipsum dolor sit amet lorem5.</h5>
+                            <p class="service_profiles_text2">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <img src="../images/3.png" alt="" class="service_pro-image" width="100%" height="auto">
+                    </div>
+                </div>
+                <div class="py-5 service_profile-main">
+                    <div class="service_profiles d-flex">
+                        <div class="col-md-2 service_profiles_img">
+                            <img src="../images/Mask group 2.png" alt="" width="40px" height="40px">
+                        </div>
+                        <div class="col-md-10 service_profiles_body_5 ps-2 pt-3">
+                            <h5 class="service_profiles_text1">Lorem ipsum dolor sit amet .</h5>
+                            <p class="service_profiles_text2">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <img src="../images/1.png" alt="" class="service_pro-image_1" width="100%" height="auto">
+                    </div>
+                </div>
+                <div class="py-5 service_profile-main">
+                    <div class="service_profiles d-flex">
+                        <div class="col-md-2 service_profiles_img">
+                            <img src="../images/Mask group 3.png" alt="" width="40px" height="40px">
+                        </div>
+                        <div class="col-md-10 service_profiles_body_5 ps-2 pt-3">
+                            <h5 class="service_profiles_text1">Lorem ipsum dolor sit amet.</h5>
+                            <p class="service_profiles_text2">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <img src="../images/2.png" alt="" class="service_pro-image_2" width="100%" height="auto">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 p-3 px-4 mb-2 registration-form-container">
+                <h1 class="reg-vehicle-header">Start By Entering your Registration Vehicle</h1>
+                <form class="navbar-form form-inline">
+                    <div class="input-group search-box">
+                        <div class="input-group-append">
+                            <span class="input-group-text">
+                                <i class="fa-solid fa-magnifying-glass text-dark"></i>
+                            </span>
+                        </div>
+                        <input type="text" id="search" class="form-control enter_reg-num text-center pt-3 my-3" data-bs-toggle="modal" data-bs-target="#exampleModal" placeholder="ENTER REG">
+
+                        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Launch demo modal
+                          </button> -->
+                    </div>
+                </form>
+                <h1 class="reg-vehicle-header">Start By Entering your Registration Vehicle</h1>
+                <select class="form-select register-selection">
+                    <option selected>select Make </option>
+                    <option value="1" class="text-dark">One</option>
+                    <option value="2" class="text-dark">Two</option>
+                    <option value="3" class="text-dark">Three</option>
+                </select>
+                <select class="form-select register-selection">
+                    <option selected>select Model</option>
+                    <option value="1" class="text-dark">One</option>
+                    <option value="2" class="text-dark">Two</option>
+                    <option value="3" class="text-dark">Three</option>
+                </select>
+                <select class="form-select register-selection">
+                    <option selected>select Year</option>
+                    <option value="1" class="text-dark">One</option>
+                    <option value="2" class="text-dark">Two</option>
+                    <option value="3" class="text-dark">Three</option>
+                </select>
+                <select class="form-select register-selection">
+                    <option selected>select Engine</option>
+                    <option value="1" class="text-dark">One</option>
+                    <option value="2" class="text-dark">Two</option>
+                    <option value="3" class="text-dark">Three</option>
+                </select>
+                <button type="button" class="btn pt-2 mt-4  w-100 reselt-search-button d-flex justify-content-between">
+                    <h6 class="text-light field-result">Field Result</h6>
+                    <a href="#" class="text-end">
+                        <i class="fa-solid fa-chevron-right text-white"></i>
+                        <!-- <img src="../images/Frame 4.png" alt="" width="20px" height="20px"> -->
+                    </a>
+                </button>
+            </div>
+            <div class="col ms-4 register-sec-2">
+                <div class="py-5 service_profile-main">
+                    <div class="service_profiles d-flex">
+                        <div class="col-md-2 service_profiles_img">
+                            <img src="../images/Mask group 4.png" alt="" width="40px" height="40px">
+                        </div>
+                        <div class="col-md-10 ps-2 pt-3 service_profiles_body_5">
+                            <h5 class="service_profiles_text1">Lorem ipsum dolor sit amet.</h5>
+                            <p class="service_profiles_text2">Lorem ipsum dolor sit amet.</p>
+                            <img src="../images/4.png" alt="" class="service_pro-image_3" width="100%" height="auto">
+                        </div>
+                    </div>
+                </div>
+                <div class="py-5 service_profile-main">
+                    <div class="service_profiles d-flex">
+                        <div class="col-md-2 service_profiles_img">
+                            <img src="../images/Mask group 5.png" alt="" width="40px" height="40px">
+                        </div>
+                        <div class="col-md-10 service_profiles_body_5 ps-2 pt-3">
+                            <h5 class="service_profiles_text1">Lorem ipsum dolor sit amet.</h5>
+                            <p class="service_profiles_text2">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <img src="../images/5.png" alt="" class="service_pro-image_4" width="100%" height="auto">
+                    </div>
+                </div>
+                <div class="py-5 service_profile-main">
+                    <div class="service_profiles d-flex">
+                        <div class="col-md-2 service_profiles_img">
+                            <img src="../images/Mask group 6.png" alt="" width="40px" height="40px">
+                        </div>
+                        <div class="col-md-10 service_profiles_body_5 ps-2 pt-3">
+                            <h5 class="service_profiles_text1">Lorem ipsum dolor sit amet.</h5>
+                            <p class="service_profiles_text2">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <img src="../images/6.png" alt="" class="service_pro-image_5" width="100%" height="auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="container py-1">
+        <h5 class="bat-services-header">Services</h5>
+        <div class="row g-4 cards-dispaly-services">
+            <div class="col ">
+                <div class="card">
+                    <img src="../images/Mask group 7.png" class="card-img-top" alt="...">
+                    <div class="card-body text-center bat-services-lists">
+                        <h5 class="card-title">Roadside Assistance</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card">
+                    <img src="../images/Mask group 8.png" class="card-img-top" alt="...">
+                    <div class="card-body text-center bat-services-lists">
+                        <h5 class="card-title">Roadside Assistance</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card">
+                    <img src="../images/Mask group 9.png" class="card-img-top" alt="...">
+                    <div class="card-body text-center bat-services-lists">
+                        <h5 class="card-title">Roadside Assistance</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container py-4">
+        <h5 class="bat-services-header">Featured Products</h5>
+        <div class="row g-4 cards-dispaly-services">
+            <div class="col ">
+                <div class="card service-card-main ">
+                    <div class="mx-auto service-image-main  p-4">
+                        <img src="../images/Halfords-HB063-Lead-Acid-12V-Car-Battery-3-Year-Guarantee 1.png"
+                            class="card-img-top" alt="..." width="100%" height="auto">
+                    </div>
+                    <div class="card-body service-body-main ps-4">
+                        <h5 class="card-title service-card-body">Car Battery</h5>
+                        <h6 class="service-card-text">This card has supporting text
+                            content.</h6>
+                        <h6 class="bat-service-amount "><strike class="strike-amount">$120.00</strike>$120.00</h6>
+                    </div>
+                    <div class="card-footer service-footer-card d-flex justify-content-between align-items-center ps-4">
+                        <h5 class="service-addtocart-text pt-2">ADD TO CART</h5>
+                        <i class="fa-solid fa-cart-shopping service-addtocart-icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card service-card-main ">
+                    <div class="mx-auto service-image-main  p-4">
+                        <img src="../images/Halfords-HB063-Lead-Acid-12V-Car-Battery-3-Year-Guarantee 1.png"
+                            class="card-img-top" alt="..." width="100%" height="auto">
+                    </div>
+                    <div class="card-body service-body-main ps-4">
+                        <h5 class="card-title service-card-body">Car Battery</h5>
+                        <h6 class="service-card-text">This card has supporting text
+                            content.</h6>
+                        <h6 class="bat-service-amount "><strike class="strike-amount">$120.00</strike>$120.00</h6>
+                    </div>
+                    <div class="card-footer service-footer-card d-flex justify-content-between align-items-center ps-4">
+                        <h5 class="service-addtocart-text pt-2">ADD TO CART</h5>
+                        <i class="fa-solid fa-cart-shopping service-addtocart-icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card service-card-main ">
+                    <div class="mx-auto service-image-main  p-4">
+                        <img src="../images/Halfords-HB063-Lead-Acid-12V-Car-Battery-3-Year-Guarantee 1.png"
+                            class="card-img-top" alt="..." width="100%" height="auto">
+                    </div>
+                    <div class="card-body service-body-main ps-4">
+                        <h5 class="card-title service-card-body">Car Battery</h5>
+                        <h6 class="service-card-text">This card has supporting text
+                            content.</h6>
+                        <h6 class="bat-service-amount "><strike class="strike-amount">$120.00</strike>$120.00</h6>
+                    </div>
+                    <div class="card-footer service-footer-card d-flex justify-content-between align-items-center ps-4">
+                        <h5 class="service-addtocart-text pt-2">ADD TO CART</h5>
+                        <i class="fa-solid fa-cart-shopping service-addtocart-icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card service-card-main ">
+                    <div class="mx-auto service-image-main  p-4">
+                        <img src="../images/Halfords-HB063-Lead-Acid-12V-Car-Battery-3-Year-Guarantee 1.png"
+                            class="card-img-top" alt="..." width="100%" height="auto">
+                    </div>
+                    <div class="card-body service-body-main ps-4">
+                        <h5 class="card-title service-card-body">Car Battery</h5>
+                        <h6 class="service-card-text">This card has supporting text
+                            content.</h6>
+                        <h6 class="bat-service-amount "><strike class="strike-amount">$120.00</strike>$120.00</h6>
+                    </div>
+                    <div class="card-footer service-footer-card d-flex justify-content-between align-items-center ps-4">
+                        <h5 class="service-addtocart-text pt-2">ADD TO CART</h5>
+                        <i class="fa-solid fa-cart-shopping service-addtocart-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="my-slider-4  mt-2 ps-5 p-3 customer-logos-container  ">
+                <a href="#"> <img src="../images/logo-midtronic_0 1.png" alt="" class="slider-image-link1" /></a>
+                <a href="#"> <img src="../images/logo-lifeline.png" alt="" class="slider-image-link1" /></a>
+                <a href="#"> <img src="../images/logo-optima.png" alt="" class="slider-image-link1" /></a>
+                <a href="#"> <img src="../images/logo-varta.png" alt="" class="slider-image-link1" /></a>
+                <a href="#"> <img src="../images/Ultra-logo1.png" alt="" class="slider-image-link1" /></a>
+                <a href="#"> <img src="../images/ENDURANT_Batteries_logo.png" alt="" class="slider-image-link1" /></a>
+                <a href="#"> <img src="../images/logo-midtronic_0 1.png" alt="" class="slider-image-link1" /></a>
+                <a href="#"> <img src="../images/logo-lifeline.png" alt="" class="slider-image-link1" /></a>
+                <a href="#"> <img src="../images/logo-optima.png" alt="" class="slider-image-link1" /></a>
+                <a href="#"> <img src="../images/logo-varta.png" alt="" class="slider-image-link1" /></a>
+                <a href="#"> <img src="../images/Ultra-logo1.png" alt="" class="slider-image-link1" /></a>
+                <a href="#"> <img src="../images/ENDURANT_Batteries_logo.png" alt="" class="slider-image-link1" /></a>
+                <a href="#"> <img src="../images/logo-midtronic_0 1.png" alt="" class="slider-image-link1" /></a>
+                <a href="#"> <img src="../images/logo-lifeline.png" alt="" class="slider-image-link1" /></a>
+                <a href="#"> <img src="../images/logo-optima.png" alt="" class="slider-image-link1" /></a>
+                <a href="#"> <img src="../images/logo-varta.png" alt="" class="slider-image-link1" /></a>
+                <a href="#"> <img src="../images/Ultra-logo1.png" alt="" class="slider-image-link1" /></a>
+                <a href="#"> <img src="../images/ENDURANT_Batteries_logo.png" alt="" class="slider-image-link1" /></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container pt-3  pb-4  pt-2 ">
+        <h5 class="bat-services-header">What Our Customer Says</h5>
+        <div class="row ">
+            <div class="my-slider-3 d-flex justify-content-between ">
+                <div class="col-md-3  review-says-card">
+                    <div class="d-flex review-heders-section">
+                        <h5 class="pe-3 review-headers">Lorem ipsum dolor sit amet</h5>
+                        <div class="d-flex review-stars  pt-1 ">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-says-comment">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Iste sunt ad voluptate illo, adipisci amet, laudantium! Atque inventore ipsa
+                        perspiciatis amet totam autem, maxime praesentium labore.</p>
+                </div>
+                <div class="col-md-3  review-says-card">
+                    <div class="d-flex review-heders-section">
+                        <h5 class="pe-3 review-headers">Lorem ipsum dolor sit amet</h5>
+                        <div class="d-flex review-stars  pt-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-says-comment">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Iste sunt ad voluptate illo, adipisci amet, laudantium! Atque inventore ipsa
+                        perspiciatis amet totam autem, maxime praesentium labore.</p>
+                </div>
+         
+                <div class="col-md-3  review-says-card">
+                    <div class="d-flex review-heders-section">
+                        <h5 class="pe-3 review-headers">Lorem ipsum dolor sit amet</h5>
+                        <div class="d-flex review-stars  pt-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-says-comment">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Iste sunt ad voluptate illo, adipisci amet, laudantium! Atque inventore ipsa
+                        perspiciatis amet totam autem, maxime praesentium labore.</p>
+                </div>
+                <div class="col-md-3  review-says-card">
+                    <div class="d-flex review-heders-section">
+                        <h5 class="pe-3 review-headers">Lorem ipsum dolor sit amet</h5>
+                        <div class="d-flex review-stars  pt-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-says-comment">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Iste sunt ad voluptate illo, adipisci amet, laudantium! Atque inventore ipsa
+                        perspiciatis amet totam autem, maxime praesentium labore.</p>
+                </div>
+                <div class="col-md-3 review-says-card">
+                    <div class="d-flex review-heders-section">
+                        <h5 class="pe-3 review-headers">Lorem ipsum dolor sit amet</h5>
+                        <div class="d-flex review-stars pt-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-says-comment">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Iste sunt ad voluptate illo, adipisci amet, laudantium! Atque inventore ipsa
+                        perspiciatis amet totam autem, maxime praesentium labore.</p>
+                </div>
+                <div class="col-md-3  review-says-card">
+                    <div class="d-flex review-heders-section">
+                        <h5 class="pe-3 review-headers">Lorem ipsum dolor sit amet</h5>
+                        <div class="d-flex review-stars  pt-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-says-comment">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Iste sunt ad voluptate illo, adipisci amet, laudantium! Atque inventore ipsa
+                        perspiciatis amet totam autem, maxime praesentium labore.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="py-5 " style="background-color: rgb(25,25,50); color: white;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <h3 class="footer-logo">LOGO HERE</h3>
+                    <P class="footer-sub-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. assumenda
+                        voluptatem corrupti! At, explicabo.</P>
+                </div>
+                <div class="col-md-2 ">
+                    <h5 class="footer-sub-head">Quick Links</h5>
+                    <div class="quick_links_sub d-flex pt-3">
+                        <img src="../images/Frame 1.png" class="me-2" alt="" width="20px" height="20px">
+                        <p class="footer-sub-text-links">Home</p>
+                    </div>
+                    <div class="quick_links_sub d-flex">
+                        <img src="../images/Frame 1.png" class="me-2" alt="" width="20px" height="20px">
+                        <p class="footer-sub-text-links">Products</p>
+                    </div>
+                    <div class="quick_links_sub d-flex">
+                        <img src="../images/Frame 1.png" class="me-2" alt="" width="20px" height="20px">
+                        <p class="footer-sub-text-links">Pages</p>
+                    </div>
+                    <div class="quick_links_sub d-flex">
+                        <img src="../images/Frame 1.png" class="me-2" alt="" width="20px" height="20px">
+                        <p class="footer-sub-text-links">News</p>
+                    </div>
+                    <div class="quick_links_sub d-flex">
+                        <img src="../images/Frame 1.png" class="me-2" alt="" width="20px" height="20px">
+                        <p class="footer-sub-text-links">Contact Us</p>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <h5 class="footer-sub-head">Services</h5>
+                    <div class="quick_links_sub d-flex pt-3">
+                        <img src="../images/Frame 1.png" class="me-2" alt="" width="20px" height="20px">
+                        <p class="footer-sub-text-links">Roadside Assistance</p>
+                    </div>
+                    <div class="quick_links_sub d-flex">
+                        <img src="../images/Frame 1.png" class="me-2" alt="" width="20px" height="20px">
+                        <p class="footer-sub-text-links">Reflecting Recycle</p>
+                    </div>
+                    <div class="quick_links_sub d-flex">
+                        <img src="../images/Frame 1.png" class="me-2" alt="" width="20px" height="20px">
+                        <p class="footer-sub-text-links">Battery Testing</p>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <h5 class="footer-sub-head">Contact Details</h5>
+                    <div class="quick_links_sub d-flex pt-3">
+                        <img src="../images/Mask group 6.png" class="me-2" alt="" width="25px" height="25px">
+                        <p class="footer-sub-text-links">Ji.Jaya Kuta No.70 karnataka,Kuta,Bangalore</p>
+                    </div>
+                    <div class="quick_links_sub d-flex">
+                        <img src="../images/Letter.png" class="me-2" alt="" width="25px" height="25px">
+                        <p class="footer-sub-text-links">Info@gmail.com</p>
+                    </div>
+                    <div class="quick_links_sub d-flex">
+                        <img src="../images/Frame 9.png" class="me-2" alt="" width="25px" height="25px">
+                        <p class="footer-sub-text-links">9988776655</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- model -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Numberplate Number</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="number-plate-num" class="col-form-label">Enter Numberplate Number:</label>
+                  <input type="text" class="form-control" id="number-plate-num" placeholder="Enter Numberplate Number">
+                </div>
+                <div class="mb-3">
+                    <label for="number-plate-country" class="col-form-label">Country:</label>
+                    <select class="form-select" aria-label="Default select example" class="number-plate-select">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="number-plate-state" class="col-form-label">State:</label>
+                    <select class="form-select" aria-label="Default select example" class="number-plate-select">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                  </div>
+              </form>
+        </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn number-button-close" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn number-button-changes">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- product slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.my-slider-3').slick({
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                arrows: false,
+                dots: true,
+                speed: 300,
+                infinite: true,
+                autoplaySpeed: 5000,
+                autoplay: true,
+                responsive: [
+                    {
+                        breakpoint: 1100,
+                        settings: {
+                            slidesToShow: 1,
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1,
+                        }
+                    }
+                ]
+            });
+        });
+
+
+
+        $(document).ready(function () {
+            $('.my-slider-4').slick({
+                slidesToShow: 6,
+                slidesToScroll: 6,
+                arrows: true,
+                dots: false,
+                speed: 300,
+                infinite: true,
+                autoplaySpeed: 5000,
+                autoplay: true,
+                responsive: [
+                    {
+                        breakpoint: 1100,
+                        settings: {
+                            slidesToShow: 3,
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1,
+                        }
+                    }
+                ]
+            });
+        });
+        
+      
+
+
+        $(document).ready(function () {
+            $(".customer-logos").slick({
+                slidesToShow: 6,
+                slidesToScroll: 6,
+                autoplay: true,
+                autoplaySpeed: 1500,
+                arrows: true,
+                prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-angle-left"></i></button>',
+                nextArrow: '<button type="button" class="slick-next"><i class="fa fa-angle-right"></i></button>',
+                dots: false,
+                pauseOnHover: false,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 4
+                        }
+                    },
+                    {
+                        breakpoint: 520,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
+</body>
+
+</html>
